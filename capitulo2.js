@@ -130,4 +130,4 @@ const saludaro = (nombre)=>{
   document.write(frase);
 }
 
-saludaro("Johan");
+// saludaro("Johan");
