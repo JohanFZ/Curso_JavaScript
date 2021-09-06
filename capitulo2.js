@@ -30,84 +30,84 @@ frase = `El nombre de mi PC es <b>${nombre}</b> <br>
 let numero = 0;
 
 
-// while(numero < 10){
-//   numero += 1;
-//   document.write(numero + "<br>");
-// }
+while(numero < 10){
+  numero += 1;
+  document.write(numero + "<br>");
+}
 
 
-// do {
-//     numero += 1;
-//     document.write(numero + "<br>");
+do {
+    numero += 1;
+    document.write(numero + "<br>");
 
-// } while (numero < 10);
+} while (numero < 10);
 
-// for (let i = 0; i < 15; i++) {
+for (let i = 0; i < 15; i++) {
 
-//   if (i == 10) {
-//     continue; //Salta el ciclo cuando esta condicion se cumpla
-//   }
-//   if (i == 14) {
-//     break; //deja de realizar algun tipo de bucle
-//   }
-//   document.write(i + "<br>");
-// }
+  if (i == 10) {
+    continue; //Salta el ciclo cuando esta condicion se cumpla
+  }
+  if (i == 14) {
+    break; //deja de realizar algun tipo de bucle
+  }
+  document.write(i + "<br>");
+}
 
-// let animales = ["Gato", "Perro", "Tiranosaurio", "Conejo"];
+let animales = ["Gato", "Perro", "Tiranosaurio", "Conejo"];
 
-// for(animal in animales) { //in devuelve la posicion de cada elemento (indice)
-//   document.write(animal + "<br>");
-//   document.write(animales[animal] + "<br>"); //bucle animales elemento animal
+for(animal in animales) { //in devuelve la posicion de cada elemento (indice)
+  document.write(animal + "<br>");
+  document.write(animales[animal] + "<br>"); //bucle animales elemento animal
 
-// }
+}
 
-// for (animal of animales) { //of devuleve el elemento
-//   document.write(animal + "<br>");
-// }
+for (animal of animales) { //of devuleve el elemento
+  document.write(animal + "<br>");
+}
 
-// let array0 = ["Johan", "Alison", "Isa"];
-// let array1 = ["Claudia", "Santi", array0];
+let array0 = ["Johan", "Alison", "Isa"];
+let array1 = ["Claudia", "Santi", array0];
 
-// forEjemplo: //label
-// for(let array in array1){ // Se recorre el segundo array
-//     if (array == 2) {
-//       for(let array of array0){ // Se recorre el array de la posicion 2
-//         document.write(array + "<br>");
-//         break forEjemplo;
-//       }
-//     }else{
-//       document.write(array1[array] + "<br>");
-//     }
-// }
+forEjemplo: //label
+for(let array in array1){ // Se recorre el segundo array
+    if (array == 2) {
+      for(let array of array0){ // Se recorre el array de la posicion 2
+        document.write(array + "<br>");
+        break forEjemplo;
+      }
+    }else{
+      document.write(array1[array] + "<br>");
+    }
+}
 
 //Funciones
 
-// function saludar(){
-//   respuesta = prompt("Hola, como te fue el dia de hoy?")
-//   if(respuesta == "bien"){
-//     alert("Me alegro");
-//   }else{
-//     alert("Que pena");
-//   }
-// }
+function welcome(){
+  respuesta = prompt("Hola, como te fue el dia de hoy?")
+  if(respuesta == "bien"){
+    alert("Me alegro");
+  }else{
+    alert("Que pena");
+  }
+}
 
 // saludar();
 
-// saludar = function () {
-//   respuesta = prompt("Hola, como te fue el dia de hoy?")
-//   if (respuesta == "bien") {
-//     alert("Me alegro");
-//   } else {
-//     alert("Que pena");
-//   }
-// }
+let vari = function () {
+  respuesta = prompt("Hola, como te fue el dia de hoy?")
+  if (respuesta == "bien") {
+    alert("Me alegro");
+  } else {
+    alert("Que pena");
+  }
+}
 
-// function saludar (){
-//     alert("Hola");
-//     return "Si sirve";
-// }
+function saludari (){
+    alert("Hola");
+    return "Si sirve";
+}
 
-// let saludo = saludar();
+// let saludo = saludari();
 
 // document.write(saludo);
 
@@ -120,14 +120,14 @@ let resultado = suma(1,58);
 
 // document.write(resultado);
 
-// const saludar = function suma(num1, num2) { // Funcion con parametros
-//   let res = num1 + num2;
-//   return res;
-// }
+const saludar = function suma(num1, num2) { // Funcion con parametros
+  let res = num1 + num2;
+  return res;
+}
 
-const saludar = (nombre)=>{
+const saludaro = (nombre)=>{
   let frase = `Hola, ${nombre}, como estas?`;
   document.write(frase);
 }
 
-saludar("Johan");
+saludaro("Johan");
