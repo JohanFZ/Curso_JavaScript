@@ -107,7 +107,7 @@ function saludari (){
     return "Si sirve";
 }
 
-// let saludo = saludari();
+let saludo = saludari();
 
 // document.write(saludo);
 
