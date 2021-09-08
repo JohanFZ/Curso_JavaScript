@@ -73,7 +73,7 @@ const pi = Math.PI
 const unm = Math.SQRT1_2 //raiz cuadrada de un medio
 const r2 = Math.SQRT2 // raiz cuadrado de 2
 
-const E = Math.E; //eules
+const E = Math.E; //euler
 const ln2 = Math.LN2; //Logaritmo natural de 2
 const ln10 = Math.LN10; //Logaritmo natural de 10
 const log2E = Math.LOG2E; //Logaritmo de E con base 2
