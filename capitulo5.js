@@ -48,4 +48,4 @@ console.timeLog(); // Detiene el tempoizador
 
 //Estilos en la consola
 
-console.log("%cJohan","color: blue; background: red")
+console.log("%cJohan","color: blue; background: red");
