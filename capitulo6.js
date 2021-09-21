@@ -16,10 +16,10 @@ variable3 = document.querySelectorAll("#parrafo");// Selecciona todos los elemen
 //Métodos de atributos de un elemento
 
 const entrada = document.querySelector(".entrada");
-entrada.setAttribute("type", "color"); //Permite modificar los valores de los atributos de un elemento
+// entrada.setAttribute("type", "text"); //Permite modificar los valores de los atributos de un elemento
 // document.write(entrada.getAttribute("type"));
 
-entrada.removeAttribute("type");//Remueve el atributo type
+// entrada.removeAttribute("type");//Remueve el atributo type
 
 //Atributos Globales
 
@@ -31,7 +31,19 @@ titulo.setAttribute("dir", "rtl");//Posicion del elemento de derecha a izquierda
 titulo.setAttribute("tabindex", "0");//Permite mostrar si un objeto tiene focus
 titulo.setAttribute("title", "Titulo");// Agrega una decsripcion al elemento al pasar sobre este
 
-//Atributos de Inputs
+//Atributos de Inputs (Son editables en este momento)
+
+document.write(entrada.className); //Permite observar el nombre de la clase de un elemento
+document.write(entrada.value);// Permite observar el valor del elemento
+// document.write(entrada.type = "range"); //Permite observar el tipo del elemento
+entrada.accept = "image/png"; //Permite aceptar tipos de archivos
+
+entrada.minlenght = 5;
+
+//Style
+
+titulo.style.color = "red";
+titulo.style.backgroundColor = "blue";
 
 
 
