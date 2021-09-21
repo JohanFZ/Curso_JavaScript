@@ -12,3 +12,10 @@ console.warn("Esto es una advertencia"); // Mensaje de Advertencia
 console.dir([4, 2, 4, 5, 8, 9, 1, 4, 3, 77, 4]); //Despliega una lista de elementos de un array
 
 //Funciones de Conteo
+
+console.count(); //Sirve como un contador
+console.countReset();// Resetea el contador count
+console.count();
+
+//Funciones de Agrupacion
+
