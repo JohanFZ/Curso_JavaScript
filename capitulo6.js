@@ -33,17 +33,36 @@ titulo.setAttribute("title", "Titulo");// Agrega una decsripcion al elemento al 
 
 //Atributos de Inputs (Son editables en este momento)
 
-document.write(entrada.className); //Permite observar el nombre de la clase de un elemento
+document.write(entrada.className + `<br>`); //Permite observar el nombre de la clase de un elemento
 document.write(entrada.value);// Permite observar el valor del elemento
-// document.write(entrada.type = "range"); //Permite observar el tipo del elemento
+document.write(entrada.type = "range" + `<br>`); //Permite observar el tipo del elemento
 entrada.accept = "image/png"; //Permite aceptar tipos de archivos
 
-entrada.minlenght = 5;
+entrada.minlenght = 5;//Pone una cantidad de caracteres minimos que debe cumplir un input
 
-//Style
+//Propiedad Style
 
 titulo.style.color = "red";
 titulo.style.backgroundColor = "blue";
+
+//Clases, classList y sus metodos
+
+titulo.classList.add("grande"); //Añade una clase a un elemento
+titulo.classList.remove("grande");//Remueve una clase de un elemento
+valor = titulo.classList.item(0);//Accede a la clase de un elemento (Devuelve informacion)
+
+document.write(valor);
+
+valor1 = titulo.classList.contains("grande");//Verifica si existe una clase en un elemento
+
+document.write(valor1);
+
+//se le puede añadri un segundo parametro true para indiicar que asi este la clase no la quite y false para que la quite
+titulo.classList.toggle("grande");//Permite añadir o quitar una clase de un elemento (si existe la quita)
+
+titulo.classList.replace("grande", "pequeño"); //Remplaza una clase por otra
+
+
 
 
 
