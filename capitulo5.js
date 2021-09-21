@@ -19,3 +19,22 @@ console.count();
 
 //Funciones de Agrupacion
 
+console.group("Frutas"); //Crea grupos en la consola
+
+console.log("Hola");
+console.log("Hola1");
+console.log("Hola2");
+
+console.group("SubGrupo de Frutas");
+console.log("Hola1");
+
+console.groupEnd(); // Termina el subgrupo
+console.groupEnd();//Termina el grupo
+
+console.log("Johan");
+
+console.groupCollapsed("Animales");// Crea el grupo perode forma cerrada
+
+console.log("Perro");
+console.log("Gato");
+console.groupEnd();
