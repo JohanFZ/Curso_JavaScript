@@ -17,8 +17,22 @@ variable3 = document.querySelectorAll("#parrafo");// Selecciona todos los elemen
 
 const entrada = document.querySelector(".entrada");
 entrada.setAttribute("type", "color"); //Permite modificar los valores de los atributos de un elemento
-document.write(entrada.getAttribute("type"));
+// document.write(entrada.getAttribute("type"));
 
 entrada.removeAttribute("type");//Remueve el atributo type
 
 //Atributos Globales
+
+const titulo = document.querySelector(".titulo");
+
+titulo.setAttribute("contentEditable","false");//Permite que un elemento sea editable
+titulo.setAttribute("dir", "rtl");//Posicion del elemento de derecha a izquierda o viceversa
+// titulo.setAttribute("hidden", "true"); // Permite ocultar un elemento
+titulo.setAttribute("tabindex", "0");//Permite mostrar si un objeto tiene focus
+titulo.setAttribute("title", "Titulo");// Agrega una decsripcion al elemento al pasar sobre este
+
+//Atributos de Inputs
+
+
+
+
