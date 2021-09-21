@@ -38,3 +38,14 @@ console.groupCollapsed("Animales");// Crea el grupo perode forma cerrada
 console.log("Perro");
 console.log("Gato");
 console.groupEnd();
+
+//Funciones de Temporizacion
+
+console.time();// Inicia un temporizador
+console.timeEnd();//Guarda el valor del temporizador en un momento
+console.time();
+console.timeLog(); // Detiene el tempoizador
+
+//Estilos en la consola
+
+console.log("%cJohan","color: blue; background: red")
