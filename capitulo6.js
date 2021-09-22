@@ -55,15 +55,67 @@ document.write(valor);
 
 valor1 = titulo.classList.contains("grande");//Verifica si existe una clase en un elemento
 
-document.write(valor1);
+document.write(valor1 + `<br>`);
 
 //se le puede añadri un segundo parametro true para indiicar que asi este la clase no la quite y false para que la quite
 titulo.classList.toggle("grande");//Permite añadir o quitar una clase de un elemento (si existe la quita)
 
 titulo.classList.replace("grande", "pequeño"); //Remplaza una clase por otra
 
+//Obtencion y Modicacion de elementos
+
+const titulito = document.querySelector(".titulito");
+
+let resultado = titulito.textContent;//Muestra el contenido texto de un elemento sin mostrar las etiquetas HTML
+let resultado1 = titulito.innerHTML;//Muestra el contenido de un elemento incluyendo el codigo HTML
+let resultado2 = titulito.outerHTML;//Muestra todo el contenido de un elemento incluyendo su propia etiqueta
+
+// document.write(resultado);
+// alert(resultado1);
+// alert(resultado2);
+
+//Creacion de Elementos
+
+const contenedor = document.querySelector(".contenedor");
+
+const item = document.createElement("LI");//Permite crear elementos HTML, se deben usar mayusculas para definirlos por el case sensitive
+
+const textNode = document.createTextNode("Hola este es un texto anidado al contenedor");//Permite crear un nodo de texto
+
+item.appendChild(textNode);
+contenedor.appendChild(item);
+
+const fragmento = document.createDocumentFragment();//Sirve para añadir multiples elementos evitando el consumo de recursos
+
+for (let index = 0; index < 4; index++) {
+  const item1 = document.createElement("LI");
+  item1.innerHTML = "Esto es una prueba";
+  fragmento.appendChild(item1);
+}
+
+contenedor.appendChild(fragmento);
+
+console.log(fragmento);
+console.log(contenedor);
+console.log(item);
+console.log(textNode);
+// document.write(item);
+
+//Obtencion y modificacion de CHILDS
+
+const content = document.querySelector(".content");
+
+const primerHijo = content.firstChild;//Trae el primer hijo de un padre (si tiene espacio lo cuenta como text)
+const ultimoHijo = content.lastChild;//Trae el ultimo hijo de un padre
+const pHijo = content.firstElementChild;//Trae el primer hijo sin importar los espacios (Mas util)
+const uHijo = content.lastElementChild;//Trae el ultimo elemento sin importar los espacios
+const childNodes = content.childNodes;//Devuelve un NodeList con todos los hijos
+const children = content.children;//Devuleve una coleccion HTMkl con todas als eiquetas Hijas
 
 
-
-
-
+console.log(primerHijo);
+console.log(ultimoHijo);
+console.log(pHijo);
+console.log(uHijo);
+console.log(childNodes);
+console.log(children);
