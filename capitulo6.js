@@ -129,7 +129,7 @@ h2Nuevo.innerHTML = "Este es un Titulo jskadasd"
 const h2Viejo = document.querySelector(".h2");
 
 content.replaceChild(h2Nuevo, h2Viejo); //Remplaza hijos por otros
-content.removeChild(h2Nuevo); //Elimina un hijo
+// content.removeChild(h2Nuevo); //Elimina un hijo
 
 const respuesta = content.hasChildNodes();//verifica si el elemento tiene hijos
 
@@ -140,3 +140,14 @@ if(respuesta){
 }
 
 //Propiedades de Parents
+
+const parent = h2Nuevo.parentElement;//Nos dice quien es el padre del elemento
+
+console.log(parent);
+
+//Propiedades de Siblings (Hermanos)
+
+console.log(h2Nuevo.nextSibling);
+console.log(h2Nuevo.previousSibling);
+console.log(h2Nuevo.nextElementSibling);
+console.log(h2Nuevo.previousElementSibling);
