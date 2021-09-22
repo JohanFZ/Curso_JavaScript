@@ -151,3 +151,9 @@ console.log(h2Nuevo.nextSibling);
 console.log(h2Nuevo.previousSibling);
 console.log(h2Nuevo.nextElementSibling);
 console.log(h2Nuevo.previousElementSibling);
+
+//Closest
+
+const div = document.querySelector(".div-3");//Elemento ascendete mas cercano
+
+console.log(div.closest(".div"));
