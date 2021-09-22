@@ -119,3 +119,24 @@ console.log(pHijo);
 console.log(uHijo);
 console.log(childNodes);
 console.log(children);
+
+//Metodos de Childs
+
+const parraf = document.createElement("P").innerHTML = "Parrafo";
+const h2Nuevo = document.createElement("H2");
+h2Nuevo.innerHTML = "Este es un Titulo jskadasd"
+
+const h2Viejo = document.querySelector(".h2");
+
+content.replaceChild(h2Nuevo, h2Viejo); //Remplaza hijos por otros
+content.removeChild(h2Nuevo); //Elimina un hijo
+
+const respuesta = content.hasChildNodes();//verifica si el elemento tiene hijos
+
+if(respuesta){
+  document.write("El elemento tiene hijos");
+}else{
+  document.write("El elemento no tiene Hijos");
+}
+
+//Propiedades de Parents
